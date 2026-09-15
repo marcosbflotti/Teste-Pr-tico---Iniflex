@@ -37,12 +37,22 @@ src/main/java/br/com/marcos/testejava/
     model/
         Pessoa.java
         Funcionario.java
+    service/
+        FuncionarioService.java
     util/
         Formatador.java
     Principal.java
 src/test/java/br/com/marcos/testejava/
-    PrincipalTest.java
+    service/
+        FuncionarioServiceTest.java
 ```
+
+A `FuncionarioService` concentra as regras de negócio (criação da lista,
+remoção, reajuste, agrupamento, filtragem, ordenação e cálculos) em métodos
+públicos. A `Principal` fica responsável apenas por orquestrar as chamadas e
+imprimir os resultados no formato pedido pelo enunciado. Os testes exercitam
+a `FuncionarioService` diretamente, com a mesma lista de 10 funcionários (9
+após a remoção) usada pelo programa.
 
 ## Requisitos implementados
 
